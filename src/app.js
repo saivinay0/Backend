@@ -22,4 +22,9 @@ app.use(express.urlencoded({
 }))
 app.use(express.static("public"))
 app.use(cookieparser())
-export { app }
+
+//routes
+import router from './routes/user.routes.js'
+
+app.use("/api/v1/users",router)
+export default app
