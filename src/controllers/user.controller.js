@@ -173,4 +173,4 @@ const refreshaccesstoken=asyncHandler(async(req,res)=>{
 
 
 
-export {loginUser,registerUser,logoutuser}
+export {loginUser,registerUser,logoutuser,refreshaccesstoken}
