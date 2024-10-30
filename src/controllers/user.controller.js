@@ -131,7 +131,7 @@ const logoutuser = asyncHandler(async(req, res) => {
 
 const refreshaccesstoken=asyncHandler(async(req,res)=>{
     const incomingrefreshtoken=req.cookies.refreshToken || req.body.refreshToken
-    if (!incomingrefreshtooken) throw new ApiError(401,"Unauthorised request")
+    if (!incomingrefreshtoken) throw new ApiError(401,"Unauthorised request")
     
 
     try {
